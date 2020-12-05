@@ -1,0 +1,113 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
+    visibility: hidden;
+}
+
+html {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #090909;
+    min-width: 100vw;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav {
+    -ms-flex: 0 0 18%;
+    -webkit-box-flex: 0;
+            flex: 0 0 18%;
+    max-width: 18%;
+
+    background-color: #d1d7fc;
+}
+
+main {
+    -ms-flex: 0 0 82%;
+    -webkit-box-flex: 0;
+            flex: 0 0 82%;
+    max-width: 82%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+header {
+    -ms-flex: 0 0 21%;
+    -webkit-box-flex: 0;
+            flex: 0 0 21%;
+    max-height: 21%;
+
+    background-color: #afdafc;
+}
+
+.content {
+    -ms-flex: 0 0 58%;
+    -webkit-box-flex: 0;
+            flex: 0 0 58%;
+    max-height: 58%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+footer {
+    -ms-flex: 0 0 21%;
+    -webkit-box-flex: 0;
+            flex: 0 0 21%;
+    max-height: 21%;
+
+    background-color: #afdafc;
+}
+
+article {
+    -ms-flex: 0 0 72%;
+    -webkit-box-flex: 0;
+            flex: 0 0 72%;
+    max-width: 72%;
+
+    background-color: #ffffff;
+}
+
+aside {
+    -ms-flex: 0 0 28%;
+    -webkit-box-flex: 0;
+            flex: 0 0 28%;
+    max-width: 28%;
+
+    background-color: #f6c7cb;
+}
+
+nav, header, article, aside, footer {
+    padding: 1.5rem;
+    user-select: none;
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 1vw;
+    }
+}
